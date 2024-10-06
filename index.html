@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Cassidy Bester- Personal portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/css/leaflet.css">
+    <link rel="stylesheet" href="./assets/css/tailwind/tailwind.min.css">
+    <link rel="stylesheet" href="./assets/css/theme.css">
+    <link rel="stylesheet" href="./assets/css/loopple/loopple.css">
+    
+    <link rel="stylesheet" href="/styles.css">
+
+</head>
+
+<body class="body" style="background-color:beige;">
+
+   
+    <div class="mx-auto ">
+        
+        <div class="relative flex flex-wrap items-center justify-between w-full shrink-0 ">
+            <div class="px-4">
+                <img class="h-6" src="./White_Gray_Simple_Geometric_Professional_Circle_Profile_Photo_Instagram_Post-removebg-preview.png">
+            </div>
+            
+            <div class="hidden md:flex items-center justify-between text-black gap-12 ">
+                <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900 cursor-pointer" href="#aboutMe">About me</a>
+                <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900 cursor-pointer" href="#toolBox">Tool Box</a>
+                <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900 cursor-pointer" href="#CacheBank">Cache Bank Project </a>
+                <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900 cursor-pointer" href="#agileBoard">Agile board project</a>
+                <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900 cursor-pointer" href="#contact">Contact me</a>
+            </div>
+            
+            <button class="p-4 md:hidden " id="mobile-menu-toggle">
+                <svg
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="h-6 w-6"
+                fill="none"
+                >
+                <g clip-path="url(#clip0_429_11066)">
+                  <path
+                    d="M3 6.00092H21M3 12.0009H21M3 18.0009H21"
+                    stroke="#292929"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_429_11066">
+                    <rect
+                      width="24"
+                      height="24"
+                      fill="white"
+                      transform="translate(0 0.000915527)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+            <div class="absolute w-full hidden md:hidden flex md:flex flex-col items-start justify-center w-flow overflow-hidden gap-3 bg-white max-h-screen top-full  px-4 py-8" id="mobile-menu">
+           
+               
+                <div class="hidden md:flex items-center justify-between text-black gap-12">
+                    <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900 cursor-pointer" href="#aboutMe">About me</a>
+                    <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900 cursor-pointer" href="#toolBox">Tool Box</a>
+                    <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900 cursor-pointer" href="#CacheBank">Cache Bank Project </a>
+                    <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900 cursor-pointer" href="#agileBoard">Agile board project</a>
+                    <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900 cursor-pointer" href="#contact">Contact me</a>
+                
+                 
+             
+            
+                
+            
+            </div>
+        </div>
+    </div>
+    
+    <!--INTRO-->
+    <section class="grid w-full grid-cols-1 my-auto mt-12 mb-8 md:grid-cols-2 xl:gap-14 md:gap-5">
+        <div class="  text-center lg:text-start">
+            <h2 class="mb-6 text-base font-normal leading-7 lg:w-3/4 text-grey-900">
+                Hello there, I am
+
+            </h2>
+            <h1 class="mb-7 text-2xl font-bold leading-tight lg:text-2xl text-dark-grey-900">
+                Cassidy Bester
+            </h1>
+           
+
+            <div class="flex flex-col items-center gap-4 lg:flex-row text-1xl" >
+                I am a junior front-end software developer who is actively studying front-end software development to add new tools to my
+                tool box. This page is to showcase a few of my projects, display my toolbox and to share my contact details. My goal is to work as a software developer as I find problem solving so rewarding and bringing ideas to life using software and the skills that I have aquired really interests me.
+
+            </div>
+
+        </div>
+
+        <div class="items-center justify-end hidden col-span-1 md:flex">
+            <img class="w-4/5 rounded-md" src="./White Gray Simple Geometric Professional Circle Profile Photo Instagram Post.png" alt="Picture of myself">
+        </div>
+
+
+    </section>
+
+
+
+
+
+    <!--ENDORSMENT-->
+    <section>
+    <div class=" toolbox" id="toolBox">
+         <h1 >
+               Tool Box:
+            </h1>
+
+            <div class="tools">
+                
+                    <div class="tool">
+                        <img src="./html-removebg-preview.png" alt="HTML">
+                        <p>HTML</p>
+                    </div>
+                    <div class="tool">
+                        <img src="./CSS-removebg-preview.png" alt="CSS">
+                        <p>CSS</p>
+                    </div>
+                    <div class="tool">
+                        <img src="./JavaScript-removebg-preview.png" alt="JavaScript">
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="tool">
+                        <img src="./react-removebg-preview.png" alt="React">
+                        <p>React</p>
+                    </div>
+                    <div class="tool">
+                        <img src="./tailwind_CSS-removebg-preview.png" alt="React">
+                        <p>Tailwind CSS</p>
+                    </div>
+                    
+            </div>
+
+        </div>
+
+
+    </section>
+    
+    <!--component 3       link for Cache Bank site: https://cachebankwebsiteproject.netlify.app-->
+    <!--CACHE BANK PROJECT-->
+    <div class=" container mx-auto py-10 flex flex-col items-center justify-center" id="CacheBank">
+     
+      <div class=" flex flex-col items-center justify-center mt-12">
+   
+        <h1 class="mb-4 text-3xl lg:text-4xl font-extrabold text-dark-grey-900 text-center">Cache Bank Project Website</h1>
+        <p class="text-lg text-center lg:w-7/12 text-grey-700">This is one of the first bigger projects that I created. My Cache Bank project is a landing page for a fictional bank that gives basic information about the bank and provides steps for the user to follow in order to get started with Cache Bank. The technologies I used in this was HTML and tailwind CSS. This project is responsive for across all devices wiich makes it more accessable. </p>
+      </div>
+      <section>
+      <div>
+          <a href="https://cachebankwebsiteproject.netlify.app">Click here to check out the project!</a> 
+      </div>
+    </section>
+
+    <section class="grid w-full grid-cols-1 my-auto mt-12 mb-8 md:grid-cols-2 xl:gap-14 md:gap-5">
+        <div class="  text-center lg:text-start">
+            <h1 class="mb-7 text-base font-bold leading-7 lg:w-3/4 text-grey-900">
+                Features included in the project
+
+            </h1>
+            <div class="mb-4">
+                <ul>
+                    <li>functionl hamburger for mobile view for a less cluttered UI</li>
+                    <li>Links to different sections of the page </li>
+                    <li>Responsive across multiple devices </li>
+                    <li> Logical and professional layout</li>
+                    <li> functional card contact section</li>
+                </ul>
+            </div>
+            
+           
+
+           
+
+        </div>
+
+        <div class="items-center justify-end hidden col-span-1 md:flex">
+            <img class="w-4/5 rounded-md" src="./explaination-image.png" alt="Picture of myself">
+        </div>
+
+
+    </section>
+
+    
+    <!--AGILE BOARD PROJECT-->   
+    <div class=" container   flex flex-col items-center justify-center bg-white w-full" id="agileBoard">
+        
+         <div class=" flex flex-col items-center justify-center mt-12">
+      
+           <h1 class="mb-4 text-3xl lg:text-4xl font-extrabold text-dark-grey-900 text-center">Agile board project</h1>
+           <p class="text-lg text-center lg:w-7/12 text-grey-700">This is another one of my projects. I had to debug provided code in order to make the code work. This is a task management app that is interactive an allows user input. </p>
+         </div>
+         <section>
+         <div>
+          <a href="https://github.com/Cassidy2024/JSL_Portfolio_Piece_CASBES362_PTO2401_A_Cassidy-Bester_JSL11.git" >Click here to check out the project!</a> 
+         </div>
+       </section>
+   
+       <section class="grid w-full grid-cols-1 my-auto mt-12 mb-8 md:grid-cols-2 xl:gap-14 md:gap-5">
+           <div class="  text-center lg:text-start">
+               <h1 class="mb-7 text-base font-bold leading-7 lg:w-3/4 text-grey-900">
+                   Features included in the project
+   
+               </h1>
+               <div class="mb-4">
+                   <ul>
+                       <li>Editing and deleting tasks</li>
+                       <li>Updating the task status </li>
+                       <li>Updating task titles</li>
+                       <li>Light and dark mode toggle</li>
+                       <li>Viewing of task details</li>
+                   </ul>
+               </div>
+               
+              
+   
+              
+   
+           </div>
+   
+           <div class="items-center justify-end hidden col-span-1 md:flex">
+               <img class="w-4/5 rounded-md" src="./agileBoard.png" alt="Picture of myself">
+           </div>
+   
+   
+       </section>
+
+
+      </div>
+    
+    <!--component 5 Contact-->
+    <div class="w-full" >
+       <!--container-->
+        <div class="container flex flex-col items-center gap-16 mx-auto my-32" >
+           <!--card list-->
+          <div class="grid w-full grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3" id="contact">
+             <!--card-->
+            <div class="flex flex-col items-center gap-3 px-8 py-10 bg-white rounded-3xl shadow-main">
+              <span>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                  <path d="M31.9904 13.965L22.4166 4.40166C21.6057 3.60976 20.5294 3.16817 19.4104 3.16817C18.2914 3.16817 17.2151 3.60976 16.4041 4.40166L6.8304 13.9017C6.40502 14.283 6.0629 14.7524 5.82645 15.279C5.58999 15.8056 5.46454 16.3776 5.45831 16.9575V30.5425C5.47456 31.6946 5.93476 32.793 6.73808 33.5973C7.5414 34.4016 8.62236 34.846 9.74415 34.8333H28.9225C30.0443 34.846 31.1252 34.4016 31.9285 33.5973C32.7319 32.793 33.1921 31.6946 33.2083 30.5425V16.9575C33.2071 16.4009 33.0989 15.85 32.8899 15.3365C32.6809 14.823 32.3752 14.3569 31.9904 13.965ZM18.47 6.68166C18.7058 6.46025 19.0138 6.33747 19.3333 6.33747C19.6528 6.33747 19.9608 6.46025 20.1966 6.68166L28.5833 15.0417L20.1504 23.4017C19.9146 23.6231 19.6066 23.7459 19.2871 23.7459C18.9675 23.7459 18.6596 23.6231 18.4237 23.4017L10.0833 15.0417L18.47 6.68166ZM30.125 30.5425C30.1052 30.8533 29.9688 31.144 29.7445 31.3537C29.5203 31.5633 29.2256 31.6755 28.9225 31.6667H9.74415C9.44102 31.6755 9.14636 31.5633 8.9221 31.3537C8.69785 31.144 8.56147 30.8533 8.54165 30.5425V17.9708L14.7854 24.1458L12.2262 26.6792C11.9391 26.9758 11.7779 27.3771 11.7779 27.7954C11.7779 28.2137 11.9391 28.615 12.2262 28.9117C12.3695 29.066 12.5417 29.1891 12.7324 29.2734C12.9232 29.3578 13.1286 29.4017 13.3362 29.4025C13.7332 29.4009 14.1142 29.2421 14.4 28.9592L17.1287 26.2675C17.8065 26.6928 18.5853 26.9179 19.3796 26.9179C20.1738 26.9179 20.9527 26.6928 21.6304 26.2675L24.3591 28.9592C24.6449 29.2421 25.026 29.4009 25.4229 29.4025C25.6306 29.4017 25.8359 29.3578 26.0267 29.2734C26.2174 29.1891 26.3896 29.066 26.5329 28.9117C26.82 28.615 26.9812 28.2137 26.9812 27.7954C26.9812 27.3771 26.82 26.9758 26.5329 26.6792L23.9583 24.1458L30.125 17.9708V30.5425Z" fill="#22c55e"/>
+                </svg>
+              </span>
+              <p class="text-2xl font-extrabold text-dark-grey-900">Email</p>
+              <p class="text-base leading-7 text-dark-grey-600"> Contact me </p>
+              <p class="text-lg font-bold text-green-500" href="mailto: hello@loople.com">cassidybester01@gmail.com</p>
+            </div>
+
+              <!--card 2-->
+            <div class="flex flex-col items-center gap-3 px-8 py-10 bg-white rounded-3xl shadow-main">
+                <span>
+  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 3C7.0275 3 3 7.13211 3 12.2284C3 16.3065 5.5785 19.7648 9.15375 20.9841C9.60375 21.0709 9.76875 20.7853 9.76875 20.5403C9.76875 20.3212 9.76125 19.7405 9.7575 18.9712C7.254 19.5277 6.726 17.7332 6.726 17.7332C6.3165 16.6681 5.72475 16.3832 5.72475 16.3832C4.9095 15.8111 5.78775 15.8229 5.78775 15.8229C6.6915 15.887 7.16625 16.7737 7.16625 16.7737C7.96875 18.1847 9.273 17.777 9.7875 17.5414C9.8685 16.9443 10.1003 16.5381 10.3575 16.3073C8.35875 16.0764 6.258 15.2829 6.258 11.7471C6.258 10.7399 6.60675 9.91659 7.18425 9.27095C7.083 9.03774 6.77925 8.0994 7.263 6.82846C7.263 6.82846 8.01675 6.58116 9.738 7.77462C10.458 7.56958 11.223 7.46785 11.988 7.46315C12.753 7.46785 13.518 7.56958 14.238 7.77462C15.948 6.58116 16.7017 6.82846 16.7017 6.82846C17.1855 8.0994 16.8818 9.03774 16.7917 9.27095C17.3655 9.91659 17.7142 10.7399 17.7142 11.7471C17.7142 15.2923 15.6105 16.0725 13.608 16.2995C13.923 16.5765 14.2155 17.1423 14.2155 18.0071C14.2155 19.242 14.2043 20.2344 14.2043 20.5341C14.2043 20.7759 14.3617 21.0647 14.823 20.9723C18.4237 19.7609 21 16.3002 21 12.2284C21 7.13211 16.9703 3 12 3Z" fill="currentColor"/>
+                      </svg>
+                </span>
+                <p class="text-2xl font-extrabold text-dark-grey-900">GitHub</p>
+               <p class="text-base leading-7 text-dark-grey-600"> Check out my GitHub </p> 
+                <p class="text-lg font-bold text-green-500">Cassidy2024</p>
+              </div>
+
+                <!--card 3-->
+            <div class="flex flex-col items-center gap-3 px-8 py-10 bg-white rounded-3xl shadow-main">
+              <span>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                  <path d="M31.7091 15.2475C31.4927 12.9341 30.6966 10.7177 29.3984 8.81412C28.1003 6.91054 26.3443 5.38464 24.3014 4.38503C22.2585 3.38541 19.9984 2.94614 17.7412 3.10998C15.4839 3.27383 13.3065 4.03522 11.4208 5.32C9.8008 6.43252 8.44083 7.89972 7.43858 9.6162C6.43633 11.3327 5.81667 13.2558 5.62413 15.2475C5.43524 17.2261 5.67758 19.2231 6.33355 21.0936C6.98953 22.9641 8.04269 24.6611 9.41663 26.0617L17.5875 34.4692C17.7308 34.6176 17.9013 34.7354 18.0892 34.8157C18.277 34.8961 18.4785 34.9375 18.682 34.9375C18.8856 34.9375 19.0871 34.8961 19.2749 34.8157C19.4628 34.7354 19.6333 34.6176 19.7766 34.4692L27.9166 26.0617C29.2906 24.6611 30.3437 22.9641 30.9997 21.0936C31.6557 19.2231 31.898 17.2261 31.7091 15.2475ZM25.7583 23.8292L18.6666 31.1125L11.575 23.8292C10.5298 22.7557 9.72928 21.4578 9.23081 20.0288C8.73233 18.5997 8.54834 17.075 8.69204 15.5642C8.83668 14.0301 9.31143 12.5482 10.082 11.2256C10.8525 9.90299 11.8996 8.77278 13.1475 7.91666C14.7831 6.80079 16.703 6.20555 18.6666 6.20555C20.6302 6.20555 22.5502 6.80079 24.1858 7.91666C25.4299 8.76947 26.4747 9.89469 27.245 11.2115C28.0154 12.5283 28.4922 14.0039 28.6412 15.5325C28.7896 17.0484 28.6079 18.5793 28.1093 20.0142C27.6107 21.4491 26.8076 22.7522 25.7583 23.8292ZM18.6666 9.5C17.2945 9.5 15.9532 9.91787 14.8124 10.7008C13.6715 11.4837 12.7823 12.5965 12.2572 13.8984C11.7321 15.2003 11.5947 16.6329 11.8624 18.015C12.1301 19.3971 12.7908 20.6667 13.7611 21.6631C14.7313 22.6596 15.9674 23.3382 17.3132 23.6131C18.6589 23.888 20.0538 23.7469 21.3215 23.2076C22.5892 22.6684 23.6726 21.7551 24.4349 20.5834C25.1972 19.4117 25.6041 18.0342 25.6041 16.625C25.6001 14.7366 24.8678 12.9268 23.5677 11.5915C22.2675 10.2562 20.5053 9.50418 18.6666 9.5ZM18.6666 20.5833C17.9043 20.5833 17.1592 20.3512 16.5254 19.9162C15.8916 19.4813 15.3976 18.8631 15.1058 18.1398C14.8141 17.4165 14.7378 16.6206 14.8865 15.8528C15.0352 15.0849 15.4023 14.3796 15.9413 13.826C16.4803 13.2724 17.1671 12.8955 17.9147 12.7427C18.6623 12.59 19.4373 12.6684 20.1416 12.968C20.8458 13.2676 21.4477 13.7749 21.8712 14.4259C22.2947 15.0768 22.5208 15.8421 22.5208 16.625C22.5208 17.6748 22.1147 18.6816 21.3919 19.424C20.6691 20.1663 19.6888 20.5833 18.6666 20.5833Z" fill="#22c55e"/>
+                </svg>
+              </span>
+              <p class="text-2xl font-extrabold text-dark-grey-900">Location</p>
+              <p class="text-base leading-7 text-dark-grey-600">Based in </p>
+              <p class="text-lg font-bold text-green-500">Cape Town</p>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+   
+        </div>
+      </div>
+    </div>
+    <script>
+        document.getElementById("mobile-menu-toggle").addEventListener("click" , function() {document.getElementById("mobile-menu").classList.toggle("hidden")})
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/plugins/countup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/countto.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/plugins/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/maps.js"></script>
+    <script src="./assets/js/loopple/loopple.js"></script>
+</body>
+
+
+
+
+</html>

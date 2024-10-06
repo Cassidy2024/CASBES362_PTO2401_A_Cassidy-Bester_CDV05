@@ -1,0 +1,63 @@
+/* Main toolbox container */
+.toolbox {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f7f7f7;
+}
+
+.toolbox h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Flexbox container for tools */
+.tools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px; /* Space between each tool */
+    margin-bottom: 20px;
+}
+
+/* Individual tool styling */
+.tool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+    padding: 10px;
+    background-color: beige;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Image of each tool (framework/language) */
+.tool img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+/* Tool name */
+.tool p {
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 500;
+}
+
+/* Hover effect */
+.tool:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+ul {
+    list-style-type: disc; /* default */
+    
+}
+
+li {
+    margin-bottom: 20px; /* Adds space between list items */
+}
+
